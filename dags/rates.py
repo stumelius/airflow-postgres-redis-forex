@@ -71,8 +71,7 @@ def get_rates(ds, **kwargs):
 
 
 def cache_latest_rates(ds, **kwargs):
-    redis_conn = redis.StrictRedis()
-
+    redis_conn = redis.StrictRedis(host='redis')
     pg_hook = PostgresHook(postgres_conn_id='rates')
     latest_rates = """SELECT DISTINCT ON (pair)
                              pair, rate

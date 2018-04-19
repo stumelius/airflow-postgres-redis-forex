@@ -4,6 +4,7 @@ services:
         image: redis:3.2.7
         ports:
             - "6379:6379"
+            
     postgres:
         image: postgres:9.6
         environment:
@@ -12,6 +13,7 @@ services:
             - POSTGRES_DB=airflow
         volumes:
             - ./database:/docker-entrypoint-initdb.d/
+            - airflow-postgresql:/var/lib/postgresql/data
         ports:
             - "5432:5432"
 
@@ -74,6 +76,8 @@ services:
             # - POSTGRES_USER=airflow
             # - POSTGRES_PASSWORD=airflow
             # - POSTGRES_DB=airflow
-        ports:
-            - "8793:8793"
         command: worker
+        
+volumes:
+    airflow-postgresql:
+        external: true

@@ -66,4 +66,5 @@ This project is licensed under the GNU GPLv3 license - see the [LICENSE.md](LICE
 ## Acknowledgments
 
 * **Mark Litwintschik** - *Initial data pipeline architecture*
+* **Matthieu "Puckel_" Roisil** - *Airflow containerization* - [puckel](https://github.com/puckel)
 

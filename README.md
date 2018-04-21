@@ -18,15 +18,15 @@ These instructions will get you a copy of the project up and running on your loc
 2. Clone the git repository and fire up the containers: docker-compose up -d
 3. Go to http://localhost:8080
 4. Add connection under Admin -> Connections
-	a. A connection type of Postgres
-	b. A connection identifier of rates
-	c. A host string of postgres (the postgresql service name, see docker-compose.yml)
-	d. A schema string (database name) of airflow
-	e. A login of username=airflow and password=airflow
+	* A connection type of Postgres
+	* A connection identifier of rates
+	* A host string of postgres (the postgresql service name, see docker-compose.yml)
+	* A schema string (database name) of airflow
+	* A login of username=airflow and password=airflow
 5. Add connection under Admin -> Connections
-	a. A connection type of HTTP
-	b. A connection identifier of openexchangerates
-	c. A host string of the full API endpoint: https://openexchangerates.org/api/latest.json?app_id=<your_app_id>
+	* A connection type of HTTP
+	* A connection identifier of openexchangerates
+	* A host string of the full API endpoint: https://openexchangerates.org/api/latest.json?app_id=<your_app_id>
 
 
 ## Workflow

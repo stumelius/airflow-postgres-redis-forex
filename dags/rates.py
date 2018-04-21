@@ -1,3 +1,9 @@
+'''
+Created by Mark Litwintschik,
+see http://tech.marksblogg.com/airflow-postgres-redis-forex.html
+Modified by Simo Tumelius
+'''
+
 from datetime import datetime, timedelta
 import json
 

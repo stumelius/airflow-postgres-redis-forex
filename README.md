@@ -1,7 +1,7 @@
 # airflow-postgres-redis-forex
 
-This repository implements the airflow-postgres-redis-forex data pipeline as proposed by Mark Litwintschik in his [blog post](http://tech.marksblogg.com/airflow-postgres-redis-forex.html). 
-The pipeline is composed from Docker containers.
+This repository implements the airflow-postgres-redis-forex data pipeline from a [blog post](http://tech.marksblogg.com/airflow-postgres-redis-forex.html) by Mark Litwintschik. 
+The pipeline is composed of Docker containers.
 
 ## Getting Started
 
@@ -9,12 +9,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* OS: tested on Windows 10
+* OS: tested on Windows but should work on Unix-based systems as well
 * Docker 18.03.0-ce (Compose 1.20.1)
 
 ### Deployment
 
-1. Create docker volume for postgresql: docker volume create --name airflow-postgresql -d local
+1. Create a persistent docker volume for postgresql: docker volume create --name airflow-postgresql -d local
 2. Clone the git repository and fire up the containers: docker-compose up -d
 3. Go to http://localhost:8080
 4. Add connection under Admin -> Connections
@@ -51,13 +51,13 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/smomni/daqstore/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/smomni/airflow-postgres-redis-forex/tags). 
 
 ## Authors
 
 * **Simo Tumelius** - *Data pipeline containerization* - [smomni](https://github.com/smomni)
 
-See also the list of [contributors](https://github.com/smomni/daqstore/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/smomni/airflow-postgres-redis-forex/contributors) who participated in this project.
 
 ## License
 
